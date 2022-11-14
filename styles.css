@@ -109,7 +109,7 @@ p {
 }
 
 /* Media Querys */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
     a {
     text-align: right;
    }
@@ -121,11 +121,12 @@ p {
    }
 
    .pic {
-    width: 800px;
+    width: 650px;
+    padding-right: 5px;
    }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
     p {
         margin-top: 5px;
     }
