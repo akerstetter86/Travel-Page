@@ -4,9 +4,6 @@
 }
 
 /* Body Styles */
-body {
-    
-}
 
 .first {
     background-color: rgb(61, 103, 240);
@@ -49,8 +46,9 @@ footer {
 /* Navigation Styles */
 nav {
     display: flex;
+    flex-direction: column;
     background-color:  rgb(115, 211, 240);
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 nav a {
@@ -70,6 +68,7 @@ h1 {
 
 h2 {
     font-size: 36px;
+    margin-top: 10px;
 }
 
 h3 {
@@ -89,6 +88,13 @@ p {
     font-size: 20px;
 }
 
+.right {
+    text-align: right;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Image Styles */
 .pic {
     width: 425px;
@@ -103,9 +109,19 @@ p {
 }
 
 /* Media Querys */
-@media screen and(min-width: 550px) {
+@media screen and (min-width: 550px) {
     a {
     text-align: right;
+   }
+
+   nav {
+    background-color: lightcoral;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+
+   .pic {
+    width: 800px;
    }
 }
 
@@ -116,5 +132,14 @@ p {
 
     .pic {
         width: 465px;
+    }
+
+    nav {
+        justify-content: space-evenly;
+        background-color: darkblue;
+    }
+
+    nav a {
+        color: white;
     }
 }
